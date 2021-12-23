@@ -2,7 +2,7 @@
 <div class="container">
 
 <div class="title">
-    <h3>Harry Potter Characters</h3>
+    <h3>Harry Potter All Characters</h3>
 </div>
 
 <div class="characterData" v-if="characterData">
@@ -91,10 +91,17 @@ export default {
     margin: 12px auto;
 }
 
+.card_div .card{
+        box-shadow: 0px 1px 2px black;
+transition: transform 0.4s ;
+}
 .title{
     text-align: center;
     margin: 20px auto;
 }
-
+.card_div .card:hover{
+transform: scale(1.5);
+z-index: 10;
+}
 
 </style>
