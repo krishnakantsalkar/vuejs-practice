@@ -1,6 +1,6 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Harry Potter Info</a>
+  <a class="navbar-brand" href="#">My App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,13 +11,13 @@
         <router-link class="nav-link" to="/">Home </router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/characters">Characters</router-link>
+        <router-link class="nav-link" to="/crud">CRUD</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/students">Students</router-link>
+        <router-link class="nav-link" to="/harrypotter">Harry Potter Info</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/staff">Staff</router-link>
+        <router-link class="nav-link" to="/about">About</router-link>
       </li>
     
      
