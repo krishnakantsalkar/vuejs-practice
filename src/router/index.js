@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../components/Home";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
 
 const routes = [
   {
@@ -8,19 +9,36 @@ const routes = [
     component: Home,
   },
   {
-    path: "/characters",
-    name: "Characters",
-    component: () => import("../components/Characters.vue"),
+    path: "/about",
+    name: "About",
+    component: About,
   },
   {
-    path: "/staff",
-    name: "Staff",
-    component: () => import("../components/Staff.vue"),
+    path: "/crud",
+    name: "CRUD",
+    component: () => import("../components/Crud.vue"),
   },
   {
-    path: "/students",
-    name: "Students",
-    component: () => import("../components/Students.vue"),
+    path: "/harrypotter",
+    name: "HarryPotter",
+    component: () => import("../components/HarryPotter.vue"),
+    children: [
+      {
+        path: "characters",
+        name: "Characters",
+        component: () => import("../components/Characters.vue"),
+      },
+      {
+        path: "staff",
+        name: "Staff",
+        component: () => import("../components/Staff.vue"),
+      },
+      {
+        path: "students",
+        name: "Students",
+        component: () => import("../components/Students.vue"),
+      },
+    ],
   },
 ];
 
